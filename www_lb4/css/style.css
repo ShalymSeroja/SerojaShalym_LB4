@@ -100,3 +100,39 @@ footer a:hover {}
 #ContactForm a {margin-left:2px;float:right}
 #ContactForm .input {width:230px;background:none;padding:6px 10px;font-size:12px;font-family:Arial,Helvetica,sans-serif;color:#c0c0c0;height:15px;margin:0}
 #ContactForm textarea {overflow:auto;width:434px;background:none;padding:6px 10px;font-size:12px;font-family:Arial,Helvetica,sans-serif;color:#c0c0c0;height:207px;margin:0}
+
+/* Стилі для кнопки "More Info" */
+.text .button1, .text #changeImageBtn, .text #resetImageBtn {
+    display: inline-block;
+    position: absolute;
+    top: 295px; /* Позиція кнопки по висоті */
+    background: url(../images/button_3.png) 0 0 no-repeat;
+    width: 158px;
+    height: 56px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 46px;
+    color: #3d6c00;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.text .button3:hover, .text #changeImageBtn:hover, .text #resetImageBtn:hover {
+    color: #000;
+}
+
+/* Для вирівнювання кнопок поруч */
+.text .button3 {
+    margin-left: 10px; /* Відстань між кнопками */
+}
+
+/* Відставимо кнопку "Change Image" правіше */
+#changeImageBtn {
+    left: 250px; /* Можна збільшити значення, щоб кнопка була відсунута правіше */
+}
+
+/* Для кнопки "Reset Image" (щоб вона була ще правіше) */
+#resetImageBtn {
+    left: 420px; /* Трохи зміщуємо праворуч */
+}
+

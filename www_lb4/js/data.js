@@ -1,21 +1,10 @@
-function updateDateTime() {
-    const now = new Date();
-    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    
-    const day = dayNames[now.getDay()];
-    const month = monthNames[now.getMonth()];
-    const date = now.getDate();
-    const year = now.getFullYear();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-    
-    const timeString = `${day}, ${month} ${date}, ${year}  &nbsp; &nbsp; ${hours}:${minutes}:${seconds}`;
-    
-    document.getElementById('current-date-time').innerHTML = timeString;
-}
-
-// Оновлюємо дату та час кожну секунду
-setInterval(updateDateTime, 1000);
-updateDateTime(); // Відразу відобразити час
+window.onload = function() {
+  function updateDateTime() {
+      var date = new Date();
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true };
+      var dateTimeString = date.toLocaleString('en-US', options);
+      document.getElementById("current-date").innerHTML = dateTimeString;
+  }
+  updateDateTime();
+  setInterval(updateDateTime, 1000); // Update every second
+};
