@@ -52,7 +52,7 @@ header {height:181px;width:100%;overflow:hidden;background:url(../images/bg_head
 .text .tittle {font-size:75px;line-height:1.2em;display:block;letter-spacing:-2px;margin-bottom:-10px}
 .text .tittle span {font-size:46px;line-height:1.2em;color:#000;display:block;margin-top:-22px;letter-spacing:-1px}
 .text .button1 {display:block;position:absolute;top:295px;left:49px;background:url(../images/button_1.png) 0 0 no-repeat;width:158px;height:56px;text-align:center;font-size:24px;line-height:46px;color:#3d6c00;text-transform:uppercase;text-decoration:none}
-.text .button1:hover {color:#000}
+.text .button1:hover {color:#ffffff}
 .roundabout-holder { height:5em}
 .roundabout-moveable-item {cursor:pointer;width:394px;height:307px;margin-top:178px;padding-bottom:20px}
 .roundabout-in-focus {cursor:auto}
@@ -118,21 +118,19 @@ footer a:hover {}
 }
 
 .text .button3:hover, .text #changeImageBtn:hover, .text #resetImageBtn:hover {
-    color: #000;
+    color: #ffffff;
 }
 
-/* Для вирівнювання кнопок поруч */
 .text .button3 {
-    margin-left: 10px; /* Відстань між кнопками */
+    margin-left: 10px; 
 }
 
 /* Відставимо кнопку "Change Image" правіше */
 #changeImageBtn {
-    left: 250px; /* Можна збільшити значення, щоб кнопка була відсунута правіше */
+    left: 250px; 
 }
 
-/* Для кнопки "Reset Image" (щоб вона була ще правіше) */
 #resetImageBtn {
-    left: 420px; /* Трохи зміщуємо праворуч */
+    left: 420px; 
 }
 
